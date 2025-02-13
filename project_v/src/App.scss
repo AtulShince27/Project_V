@@ -15,6 +15,9 @@ body{
     .page-text{
       padding-left: 24px;
       padding-right: 24px;
+      p{
+        line-height: 2.5;
+      }
     }
     #baymaxImg{
       margin-left: auto;
@@ -61,6 +64,7 @@ body{
         }
         p{
           width: 75%;
+          line-height: 2.5;
         }
     }
   }
@@ -77,11 +81,22 @@ body{
   .star-crossed-lovers{
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 100vh;
-    h1 {
-      margin-left: 7rem;
-      font-size: 48px;
-      margin-top: 4rem;
+    min-height: 100vh;
+    .page2-text{
+      padding: 4rem 7rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h1 {
+        font-size: 48px;
+      }
+      p{
+        width: 100%;
+        font-size: 20px;
+        margin-top: 2rem;
+      }
+
     }
   }
 
@@ -89,7 +104,7 @@ body{
     background-color: #FAC67A;
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     .page3-text{
       margin-left: 7rem;
@@ -101,7 +116,7 @@ body{
       p{
         color: #060047;
         font-size: 24px;
-        width: 500px;
+        width: 85%;
       }
     }
     .page3-images{
@@ -124,6 +139,17 @@ body{
     min-height: 100vh;
     padding-bottom: 4rem;
     width: 100%;
+    .page4-video{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 2rem;
+      video{
+        border-radius: 16px;
+        border: 3px solid #B3005E;
+      }
+    }
     .page4-text{
       margin-left: 7rem;
       margin-top: 4rem;
@@ -134,7 +160,7 @@ body{
       p{
         color: #060047;
         font-size: 24px;
-        width: 500px;
+        width: 90%;
         margin-top: 0.75rem;
       }
     }
@@ -169,8 +195,8 @@ body{
   
   .proposal{
     background: linear-gradient(to bottom, #FFF8C7, #fffdeb);
-    display: grid;
-    grid-template-rows: 80% 20%;
+    // display: grid;
+    // grid-template-rows: 80% 20%;
     height: fit-content;
     min-height: 100vh;
     width: 100%;

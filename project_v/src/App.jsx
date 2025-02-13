@@ -18,8 +18,16 @@ import Gallery7 from './assets/gallery-7.png';
 import Gallery8 from './assets/gallery-8.png';
 import Gallery9 from './assets/gallery-9.png';
 import FinalPage from "./assets/Final_Page.png"
+import Hug from './assets/Hug.mp4';
+import BackgroundMusic from './assets/background-music.mp3';
+import { useEffect, useState, useRef } from 'react'
+import CustomAudioPlayer from './components/CustomAudioPlayer'
+import CustomVideoPlayer from './components/CustomVideoPlayer'
+import Hug2 from "./assets/Hug2.mp4";
+import UsVideo from "./assets/Us_Video.mp4"
 
 function App() {
+  const [display, setDisplay] = useState("100%");
 
   return (
     <>
@@ -33,6 +41,11 @@ function App() {
             and all the moments we will be making in the future
             this is my love letter to you.
           </p>
+
+          <CustomAudioPlayer src={BackgroundMusic} sx={{
+            mt: "5rem",
+            width: "50%"
+          }}/>
         </div>
         <div className='page-image'>
           <img src={Heart} alt="heart" id='heartImg'/>
@@ -48,17 +61,68 @@ function App() {
         <div className='page2-text'>
           <h1>Star Crossed Lovers</h1>
           <p>
-
+            I truly believe we were meant for each other. It may sound absolutely
+            insane, but I truly believe that the red string of fate pulled us 
+            together. Everything from the day we first met each other in the library,
+            to the first time we went on a walk together, has felt natural.
+            Everything felt like it was meant to happen, every time we held hands, 
+            hugged, kissed, talked, sat in silence, everything just felt right.
+            It is all thanks to my little princess who makes me feel at ease and 
+            comforted. Standing next to you always felt like home, holding you in 
+            my arms only reinforced that sentiment even more.
           </p>
+          <br />
+          <p>
+            I truly think we have such an amazing story to tell.
+            I truly believe that I was destined to meet you. Every single
+            event in my life, leading upto this one moment, the moment where I give 
+            my heart to someone so important to me. I look back at our story, and 
+            it is nothing short of beautiful. We have such a beautiful love for each
+            other and it is very evident in the way we act with each other. I have never
+            once felt loved by someone else, and I can whole heartedly say this: 
+            <br />
+          </p>
+            <span style={{
+              fontWeight: 700,
+              marginTop: "2rem",
+              fontSize: "20px"
+            }}>
+              I feel very loved when I&apos;m around you my dear princess.
+            </span>
         </div>
       </div>
       {/* How It All Started */}
       <div className="how-it-all-started">
         <div className='page3-text'>
           <h1>How It All Started</h1>
-          <p>
+          <p style={{
+            marginTop: "1rem"
+          }}>
             What started as a normal conversation on instagram on 22nd September 
             ended up being the most important and significant day of my life.
+            Never in a million years would I have imagined, that I would come 
+            across someone so bright, as bright as the sun itself. 
+          </p>
+          <br />
+          <p style={{
+            marginTop: "1rem"
+          }}>
+            Truth be told I could see myelf falling hopelessly for you by the end 
+            of day 3 itself. Insane right? But that just speaks volumes about who you
+            are. A me who always has his guard up, who is completely closed off was 
+            caught off guard by your mere presence. You really really have always
+            took my breath away. Everytime I learn something more about you, I only 
+            fall for you more. My cold heart has completely melted. You thawed the 
+            ice in my chest princess. I will never forget the first few days I spent with
+            you, they will forever remain dear to my heart. 
+          </p>
+          <br />
+          <p>
+            At a moment in time when I was ready to give up on love, you 
+            showed me that it really never is too late to find that special someone. 
+            You are that special someone for me. You are the one for me princess.
+            No words will ever truly come close to expressing how thankful I am to have
+            fallen in love with someone as amazing as you.
           </p>
         </div>
         <div className='page3-images'>
@@ -70,6 +134,9 @@ function App() {
       {/* Poem */}
       <div className="poem">
         <div className='page4-video'>
+          {/* <video src={Hug} controls playsInline></video> */}
+          <CustomVideoPlayer src={Hug} />
+          <CustomVideoPlayer src={Hug2} />
         </div>
         <div className='page4-text'>
           <h1>Here&apos;s A Poem I Wrote For You</h1>
@@ -150,6 +217,9 @@ function App() {
       </div>
       {/* Proposal */}
       <div className="proposal">
+        <div className='page6-text'>
+          <h1>My dear princess</h1>
+        </div>
         <div className='page6-image'>
           <div>
             <img src={FinalPage} alt="Final Page" />

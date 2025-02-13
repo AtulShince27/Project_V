@@ -1,0 +1,256 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    top: 0;
+}
+
+@media screen and (min-width: 350px) and (max-width: 768px){
+  .landing-page{
+    height: auto;
+    text-align: center;
+    padding-bottom: 2rem;
+    .page-text{
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+    #baymaxImg{
+      margin-left: auto;
+    }
+
+    #heartImg{
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20%;
+    }
+  }
+
+  .star-crossed-lovers{
+    min-height: 100vh;
+    .page2-images{
+      padding: 12px;
+      #us1{
+        width: 50%;
+        height: fit-content;
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 650px) and (max-width: 1024px) and (min-height: 650px){
+
+}
+
+
+@media screen and (min-width:1024px) and (min-height: 768px){
+  .landing-page{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 100vh;
+    width: 100%;
+    .page-text{
+      display: flex;
+      justify-content: center;
+      padding-left: 7rem;
+      flex-direction: column;
+        h1{
+          width: 100%;
+        }
+        p{
+          width: 75%;
+        }
+    }
+  }
+
+  #baymaxImg{
+    position: absolute;
+  }
+  
+  #heartImg{
+    position: absolute;
+    z-index: 1000;
+  }
+
+  .star-crossed-lovers{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+    h1 {
+      margin-left: 7rem;
+      font-size: 48px;
+      margin-top: 4rem;
+    }
+  }
+
+  .how-it-all-started{
+    background-color: #FAC67A;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+    width: 100%;
+    .page3-text{
+      margin-left: 7rem;
+      margin-top: 4rem;
+      h1{
+        color: #B3005E;
+        font-size: 48px;
+      }
+      p{
+        color: #060047;
+        font-size: 24px;
+        width: 500px;
+      }
+    }
+    .page3-images{
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 4rem;
+      div{
+          display: grid;
+          grid-template-columns: auto auto auto;
+          grid-template-columns: auto auto auto;    
+      }
+    }
+  }
+  
+  .poem{
+    background: linear-gradient(to bottom, #FAC67A, #FFF8C7);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: fit-content;
+    min-height: 100vh;
+    padding-bottom: 4rem;
+    width: 100%;
+    .page4-text{
+      margin-left: 7rem;
+      margin-top: 4rem;
+      h1{
+        color: #B3005E;
+        font-size: 48px;
+      }
+      p{
+        color: #060047;
+        font-size: 24px;
+        width: 500px;
+        margin-top: 0.75rem;
+      }
+    }
+  }
+
+  .gallery{
+    background-color: #FFF8C7;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    .page5-text{
+      margin-top: 4rem;
+      h1{
+        color: #B3005E;
+        font-size: 48px;
+      }
+    }
+    .page5-images{
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 4rem;
+      div{
+          display: grid;
+          grid-template-columns: auto auto auto;
+          grid-template-columns: auto auto auto;    
+      }
+    }
+  }
+  
+  .proposal{
+    background: linear-gradient(to bottom, #FFF8C7, #fffdeb);
+    display: grid;
+    grid-template-rows: 80% 20%;
+    height: fit-content;
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    .page6-image{
+      width: 100%;
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .page6-text{
+      h1{
+        color: #B3005E;
+        font-size: 96px;
+      }
+      p{
+        color: #060047;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.landing-page{
+  overflow-x: hidden;
+  background-color: #1C1E27;
+  width: 100%;
+  .page-text{
+      h1{
+        font-family: 'Playfair Display', serif;
+        color: #E90064;
+        font-size: 64px;
+        font-weight: 700;
+      }
+      p{
+        font-family: 'Open Sans', sans-serif;
+        color: #FFFFFF;
+        font-size: 28px;
+        line-height: 1.5;
+      }
+  }
+}
+
+
+h1{
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+  
+
+.star-crossed-lovers{
+  background-color: #EE2255;
+  width: 100%;
+  color:#fff; 
+  /* temporary */
+  .page2-images{
+    background-image: url(./assets/star-crossed.png);
+    opacity: 0.75;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #us1{
+      opacity: 1;
+    }
+  }
+}
+
+#baymaxImg{
+  bottom: 0;
+  right: 0;
+  height: 80vh;
+}
+
+#heartImg{
+  height: 10vh;
+  top: 20%;
+}
+
